@@ -1,0 +1,6 @@
+
+{
+  "name": "CodeGraph Offline Analyzer",
+  "description": "A browser-based static analysis tool that visualizes code structure and call graphs autonomously without external APIs.",
+  "requestFramePermissions": []
+}
