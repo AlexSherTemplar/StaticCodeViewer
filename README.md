@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CodeGraph Offline Analyzer
 
-# Run and deploy your AI Studio app
+A powerful static code analysis tool that visualizes your project's structure as an interactive force-directed graph. This application operates entirely offline.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1wLBoaM-VdyBFzfGT_QDzDCK6rKFS-bFJ
+*   **100% Offline & Secure**: Code analysis happens locally in your browser.
+*   **Multi-Language Support**: Python, JS/TS, C/C++, Java.
+*   **Interactive Visualization**: Zoom, pan, drag, and explore your code architecture.
 
-## Run Locally
+## Installation & Usage (Python/Pip)
 
-**Prerequisites:**  Node.js
+Since you do not have `npm`, this application is set up to run via a minimal Flask server that serves the React application. The application uses Babel Standalone to compile the TypeScript code directly in the browser.
 
+### Prerequisites
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*   Python 3.x
+*   pip
+
+### Setup
+
+1.  **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Run the Application**:
+    ```bash
+    python app.py
+    ```
+
+3.  **Access**:
+    Open your browser and go to: `http://localhost:5000`
+
+## Usage Guide
+
+1.  **Upload Code**: Click "Select Project Directory" and select a folder containing source code.
+2.  **Analyze**: The graph will automatically generate.
+3.  **Explore**: Click nodes to view the source code, or use the search bar to find specific code segments.
+
+## License
+
+MIT License
